@@ -165,27 +165,31 @@ async def clan(context, *, index: str):
         clanEmbed.add_field(name='Trophies', value=clan_trophies)
 
 
+
     except:
         await context.message.channel.send("Sorry, I couldn't find the clan you were looking for.")
+
     else:
         await context.message.channel.send(embed=clanEmbed)
+
         current_clan_name = Dict_Clans.get(index.lower())
         current_clan = list(player_data[player_data['Clan'].str.contains(clan_fix(current_clan_name), na=True)]['Name'])
         current_clan_members = list(current_clan)
         membersEmbed = discord.Embed(title=current_clan_name, description='Members:', color=0x7930a1)
-        j = 0
+
+        playertext = ""
+
         for member in current_clan_members:
-            j += 1
+
             player_country = player_data[player_data['Name'] == member]['Country'].values[0]
             player_country_emoji = Dict_Flags.get(player_country)
-            if j % 25 != 0 and j < 25:
-                membersEmbed.add_field(name=name_fix(member), value=player_country_emoji, inline=False)
-            else:
-                if j % 25 == 0:
-                    await context.message.channel.send(embed=membersEmbed)
-                    membersEmbed = discord.Embed(color=0x7930a1)
-            if j > 25 and (j % 25 != 0):
-                membersEmbed.add_field(name=name_fix(member), value=player_country_emoji, inline=False)
+
+            if player_country_emoji is None:
+                player_country_emoji = ":grey_question:"
+
+            playertext += f"{player_country_emoji} {name_fix(member)}\n"
+
+        membersEmbed.add_field(name="Players", value=playertext, inline=False)
 
         await context.message.channel.send(embed=membersEmbed)
 
