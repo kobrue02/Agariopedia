@@ -5,10 +5,10 @@ import pandas as pd
 from discord.ext import commands
 from collections import Counter
 
-from fixer_functions import *
-from dataframes import *
-from dicts_and_lists import *
-from token import token
+from funcs.fixer_functions import *
+from funcs.dataframes import *
+from funcs.dicts_and_lists import *
+from funcs.token import token
 
 # Discord Bot Setup
 
