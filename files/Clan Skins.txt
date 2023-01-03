@@ -1,0 +1,3 @@
+{'supreme': 'https://imgur.com/a/KfTcoY2',
+'ns': 'https://imgur.com/a/WYP7dMC https://imgur.com/a/TPS6byi https://imgur.com/a/TVTTI https://imgur.com/a/z3WQ2EU',
+'rev' : 'https://imgur.com/a/xdhy9au'}

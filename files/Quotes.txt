@@ -1,0 +1,7 @@
+['I care because you do...', 'You fear death, but dont even live life.',
+          'I was with them and yet I was alone...',
+          "I did not die and yet I lost Life's Breath.", 'That which does not kill us makes us stronger.',
+          'Music in the soul can be heard in the universe...', 'Never let that till tomorrow which you can do today.',
+          'Beauty, without expression, tires...',
+          'Great minds discuss ideas, average minds discuss events, small minds discuss people.',
+          'Grow old along with me! The best is yet to be.']

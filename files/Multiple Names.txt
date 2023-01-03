@@ -1,0 +1,6 @@
+{'Maggo': 'Maggo (Narcos)', 'maggo': 'Maggo (Narcos)', 'narcos': 'Maggo (Narcos)', 'Narcos': 'Maggo (Narcos)',
+'lime': 'Lime (Laimis)', 'Lime': 'Lime (Laimis', 'laimis': 'Lime (Laimis)', 'Laimis': 'Lime (Laimis)',
+'pave': 'Solo/Sleepy', 'Pave': 'Solo/Sleepy', 'Sleepy': 'Solo/Sleepy', 'sleepy': 'Solo/Sleepy',
+'solo': 'Solo/Sleepy', 'Solo': 'Solo/Sleepy', 'Nekit': 'Zampix', 'nekit': 'Zampix', 'blackbar': 'Kane',
+'BlackBar': 'Kane', 'kane': 'Kane'
+}
