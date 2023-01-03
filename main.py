@@ -8,6 +8,7 @@ from collections import Counter
 from fixer_functions import *
 from dataframes import *
 from dicts_and_lists import *
+from token import token
 
 # Discord Bot Setup
 
@@ -577,4 +578,4 @@ async def faq(context):
 
 
 # Run the client on the server
-client.run('ODE4NDUzMjAzMDc0NDE2NjQx.GeNmfI.LX091fbLuoWXFKrfIw5PyEIdd9jDFLO8PcC49o')
+client.run(token)
